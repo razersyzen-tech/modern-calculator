@@ -1,0 +1,125 @@
+/* ====== Google Fonts ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(white, #e0e0e0);
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    background: #000e1a;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display-container{
+    display: flex;
+    flex-direction: column;
+    margin-block: 40px 30px;
+}
+
+.history {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    color: #ccc;
+    font-weight: 300;
+}
+.display {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    width: 100%;
+    height: 70px;
+    text-align:right;
+    outline: none;
+    border: none;
+    pointer-events: none;
+    background: transparent;
+    color: #FFF;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.buttons button {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}.buttons .operator {
+    background: #088395;
+}
+
+.operator.top-operator {
+    background-color: #ccc;
+    color: #000;
+}
+
+.buttons button:active {
+    transform:scale(0.95);
+}
+
+button.value-zero {
+    width: calc(50% - 8px);
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 376px) {
+    body {
+        background: #000e1a;
+    }
+    .display {
+        font-size: 40px;
+    }
+    .buttons {
+        row-gap: 10px;
+    }
+    .buttons button {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+    .container {
+        max-width: 300px;
+    }
+    button.value-zero {
+    width: calc(50% - 8px);
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 30px;
+}
+}
