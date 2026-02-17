@@ -72,6 +72,14 @@ The calculator logic is handled in **main.js**:
 
 ---
 
+
+## 📚 Inspiration & Learning Source
+
+This project was inspired by a tutorial from the **[Ludiflex](https://www.youtube.com/@ludiflex)** YouTube channel.  
+The video helped guide the design structure, calculator logic, and UI interactions used in this project.
+
+---
+
 ## 📜 License
 
 This project is licensed under the **MIT License** — you are free to use, modify, and distribute it.
